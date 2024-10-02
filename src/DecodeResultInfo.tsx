@@ -1,4 +1,3 @@
-import React from "react";
 import { ActiveItem } from "./types";
 
 function DecodeResultInfo({ activeItem }: { activeItem?: ActiveItem }) {

@@ -1,15 +1,9 @@
 import { TokenEntry } from "@cashu/cashu-ts";
-import React, { useState } from "react";
+import { useState } from "react";
 import { ActiveItem } from "./types";
 import DecodeResultInfo from "./DecodeResultInfo";
 
-function DecodeResultToken({
-  tokenEntry,
-  index,
-}: {
-  tokenEntry: TokenEntry;
-  index: number;
-}) {
+function DecodeResultToken({ tokenEntry }: { tokenEntry: TokenEntry }) {
   const [active, setActive] = useState<ActiveItem>();
   return (
     <div className="bg-slate-700 gap-4 grid grid-cols-3">

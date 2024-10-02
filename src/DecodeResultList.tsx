@@ -1,5 +1,4 @@
 import { Token } from "@cashu/cashu-ts";
-import React from "react";
 import DecodeResultToken from "./DecodeResultToken";
 
 function DecodeResultList({ decodedToken }: { decodedToken: Token }) {
@@ -11,8 +10,8 @@ function DecodeResultList({ decodedToken }: { decodedToken: Token }) {
         <p>Unit: {decodedToken.unit}</p>
         <p>Mint: {decodedToken.token[0].mint}</p>
       </div>
-      {decodedToken.token.map((t, i) => (
-        <DecodeResultToken tokenEntry={t} index={i} />
+      {decodedToken.token.map((t) => (
+        <DecodeResultToken tokenEntry={t} />
       ))}
     </div>
   );
